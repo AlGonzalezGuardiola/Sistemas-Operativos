@@ -52,18 +52,18 @@ class Partido():
                 gol = self.E1.ocasion_gol()
                 self.golesE1 += gol
                 if gol == 1:
-                    print(f"Hay una ocasión de gol, el resultado es: {self.golesE1}-{self.golesE2}, Gol de {goleador} ({self.E1.nombre})")
+                    print(f"Hay una ocasión de gol, Goooooooool de {goleador}!!! Goooooooool del {self.E1.nombre}!!! El resultado es: {self.golesE1}-{self.golesE2}")
                 else:
-                    print(f"Hay una ocasión de gol, el resultado es: {self.golesE1}-{self.golesE2}, Falló el cabrón de {goleador}.")
+                    print(f"Hay una ocasión de gol falló el cabrón de {goleador}.")
             else:
                 goleadores_posibles = [pos for pos in self.E1.posiciones if pos != self.E2.GK]
                 goleador = random.choice(goleadores_posibles)
                 gol = self.E2.ocasion_gol()
                 self.golesE2 += gol
                 if gol == 1:
-                    print(f"Hay una ocasión de gol, el resultado es: {self.golesE1}-{self.golesE2}, Gol de {goleador} ({self.E2.nombre})")
+                    print(f"Hay una ocasión de gol, Goooooooool de {goleador}!!! Goooooooool del {self.E2.nombre}!!! El resultado es: {self.golesE1}-{self.golesE2}")
                 else:
-                    print(f"Hay una ocasión de gol, el resultado es: {self.golesE1}-{self.golesE2}, Falló el cabrón de {goleador}.")
+                    print(f"Hay una ocasión de gol falló el cabrón de {goleador}.")
 
 
         if self.golesE1 > self.golesE2:
