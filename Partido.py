@@ -56,7 +56,7 @@ class Partido():
                 else:
                     print(f"Hay una ocasión de gol falló el cabrón de {goleador}.")
             else:
-                goleadores_posibles = [pos for pos in self.E1.posiciones if pos != self.E2.GK]
+                goleadores_posibles = [pos for pos in self.E2.posiciones if pos != self.E2.GK]
                 goleador = random.choice(goleadores_posibles)
                 gol = self.E2.ocasion_gol()
                 self.golesE2 += gol
