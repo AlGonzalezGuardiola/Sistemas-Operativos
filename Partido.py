@@ -40,9 +40,11 @@ class Partido():
         self.ganador = 0
         self.goleador = 0
     
-   # def ha_metido():
-        
+    #def crono():
 
+
+
+    
     def JugarPartido(self):
         for i in range(self.n_ocasiones):
             a = random.randint(0, 1)
@@ -64,13 +66,13 @@ class Partido():
                     print(f"Hay una ocasión de gol, Goooooooool de {goleador}!!! Goooooooool del {self.E2.nombre}!!! El resultado es: {self.golesE1}-{self.golesE2}")
                 else:
                     print(f"Hay una ocasión de gol falló el cabrón de {goleador}.")
+         
 
-
+    def show_winner(self):
         if self.golesE1 > self.golesE2:
             print("El ganador del partido es", self.E1)
         elif self.golesE1 < self.golesE2:                
             print("El ganador del partido es", self.E2)
-            
         else:
            print(self.E1, "y", self.E2, "han empatado.") 
 
@@ -88,4 +90,5 @@ if __name__ == '__main__':
     #pdb.set_trace()
     p1 = Partido(Rcd_Mallorca, Real_Madrid, 20)
     p1.JugarPartido()
+    p1.show_winner()
 
